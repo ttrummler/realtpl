@@ -1,0 +1,99 @@
+###############################################################################
+########### Database for NASA coefficients for 9-coefficients polynomial   ####
+###############################################################################
+#
+# Database Authors:
+#      1) McBride, B.J., Zehe, M.J., Gordon, S., 2002.
+#      2) Goos, E., Burcat, A., Ruscic, B., 2010.
+#
+# References:
+# 1) McBride, B. J., Zehe, M. J., Gordon, S., "NASA Glenn Coefficients for
+#    Calculating Thermodynamic Properties of Individual Species
+#    (NASA\TP-2002-211556)." Cleveland, Glenn Research Center (2002).
+#   Online:
+#     <https://ntrs.nasa.gov/citations/20020085330>
+#   Copyright:
+#     Work of the US Gov. Public Use Permitted.
+#
+# 2) Goos, E., Burcat, A., Ruscic, B., "New NASA thermodynamic polynomials
+#    database with active thermochemical tables updates." Report ANL 5 (2010).
+#   Online:
+#    <http://burcat.technion.ac.il/dir>
+#    <http://garfield.chem.elte.hu/Burcat/burcat.html>;quote date.
+#   Copyright/License:
+#     Free of charge for non-commercial use, on condition that proper quotation
+#     is included in the pertinent publications.
+#
+# IMPORTANT:
+#     NO WARRANTY FOR THE CORRECTNESS OF THE VALUES!
+#
+Nitrogen: #source: McBride-Zehe-Gordon
+  - temp_start: 200
+    temp_end: 1000
+    coeff: [2.210371497E+04, -3.818461820E+02, 6.082738360E+00,
+            -8.530914410E-03, 1.384646189E-05, -9.625793620E-09,
+            2.519705809E-12, 7.108460860E+02, -1.076003744E+01]
+Hydrogen: #source: McBride-Zehe-Gordon
+  - temp_start: 200
+    temp_end: 1000
+    coeff: [4.078323210E+04, -8.009186040E+02, 8.214702010E+00,
+            -1.269714457E-02, 1.753605076E-05, -1.202860270E-08,
+            3.368093490E-12, 2.682484665E+03, -3.043788844E+01]
+nDodecane: #source: Goos-Burcat-Ruscic
+  - temp_start: 200
+    temp_end: 1000
+    coeff: [-1.583387502E+07, 2.318455011E+05, -1.301084838E+03,
+            3.729278890E+00, -5.271624900E-03, 3.786419430E-06,
+            -1.083032706E-09, -1.147286089E+06, 7.267799460E+03]
+nHexane: #source: McBride-Zehe-Gordon
+  - temp_start: 200
+    temp_end: 1000
+    coeff: [-5.815926700E+05, 1.079097724E+04, -6.633947030E+01,
+            2.523715155E-01, -2.904344705E-04, 1.802201514E-07,
+            -4.617223680E-11, -7.271544570E+04,  3.938283540E+02]
+Cyclopentane: #source: McBride-Zehe-Gordon
+  - temp_start: 200
+    temp_end: 1000
+    coeff: [-4.141119710E+05, 8.627592800E+03, -6.202959980E+01,
+            2.259910921E-01, -2.682303330E-04, 1.706289935E-07,
+            -4.464050920E-11, -4.931522140E+04, 3.583916230E+02]
+Cyclohexane: #source: McBride-Zehe-Gordon
+  - temp_start: 200
+    temp_end: 1000
+    coeff: [5.679987040E+05, 1.034238704E+04, -6.800041250E+01,
+            2.387797658E-01, -2.511890049E-04, 1.425293184E-07,
+            -3.407833190E-11, -6.404635160E+04, 3.934808210E+02]
+Propane: #source: McBride-Zehe-Gordon
+  - temp_start: 200
+    temp_end: 1000
+    coeff: [-2.433144337E+05, 4.656270810E+03, -2.939466091E+01,
+            1.188952745E-01, -1.376308269E-04, 8.814823910E-08,
+            -2.342987994E-11, -3.540335270E+04, 1.841749277E+02]
+Methane: #source: McBride-Zehe-Gordon
+  - temp_start: 200
+    temp_end: 1000
+    coeff: [-1.766850998E+05,  2.786181020E+03,-1.202577850E+01,
+             3.917619290E-02, -3.619054430E-05, 2.026853043E-08,
+            -4.976705490E-12, -2.331314360E+04, 8.904322750E+01]
+CarbonDioxide: #source: McBride-Zehe-Gordon
+    - temp_start: 200
+      temp_end: 1000
+      coeff: [4.943650540E+04, -6.264116010E+02,  5.301725240E+00,
+              2.503813816E-03, -2.127308728E-07, -7.689988780E-10,
+              2.849677801E-13, -4.528198460E+04, -7.048279440E+00]
+Methanol: #source: McBride-Zehe-Gordon
+    - temp_start: 200
+      temp_end: 1000
+      coeff: [-2.416642886E+05,  4.032147190E+03,-2.046415436E+01,
+               6.903698070E-02, -7.598932690E-05, 4.598208360E-08,
+              -1.158706744E-11, -4.433261170E+04, 1.400142190E+02]
+Ethanol: #source: McBride-Zehe-Gordon
+    - temp_start: 200
+      temp_end: 1000
+      coeff: [-2.342791392E+05,  4.479180550E+03,-2.744817302E+01,
+               1.088679162E-01, -1.305309334E-04, 8.437346400E-08,
+              -2.234559017E-11, -5.022229000E+04, 1.764829211E+02]
+#FluidX: #source: XX
+#  - temp_start: 1
+#    temp_end: 2
+#    coeff: [1, 2, 3, 4, 5, 6, 7, 8, 9]

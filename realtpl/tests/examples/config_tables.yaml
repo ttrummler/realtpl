@@ -1,0 +1,14 @@
+fluid_name: nHexane 
+eos_list: [SRK, PR, RKPR]
+include_ref_data: true
+pressure_start_Pa: 4.0e+06
+pressure_end_Pa: 8.0e+06
+pressure_step_Pa: 1.0e+06
+temperature_start_K: 300
+temperature_end_K: 600
+temperature_step_K: 100
+n_nasa_coeff: 7
+output_dir: results
+save_data_to_csv: true
+show_plots: false
+save_plots: false

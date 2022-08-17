@@ -1,0 +1,10 @@
+fluid_name: nDodecane
+n_nasa_coeff: 7
+output_dir: results
+pressure_Pa: 8000000.0
+show_plots: false
+save_plots: true
+save_deviation: true
+temperature_start_K: 400
+temperature_end_K: 1500
+temperature_step_K: 10

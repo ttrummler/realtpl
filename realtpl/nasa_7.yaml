@@ -1,0 +1,137 @@
+###############################################################################
+########### Database for NASA coefficients for 7-coefficients polynomial   ####
+###############################################################################
+#
+# Database Authors:
+#      1) Goos, E., Burcat, A., Ruscic, B., 2010. (Last update 27 July 2021)
+#
+# References:
+# 1) Goos, E., Burcat, A., Ruscic, B., "New NASA thermodynamic polynomials
+#    database with active thermochemical tables updates." Report ANL 5 (2010).
+#   Online:
+#    <http://burcat.technion.ac.il/dir>
+#    <http://garfield.chem.elte.hu/Burcat/burcat.html>;quote date.
+#   Copyright/License:
+#     Free of charge for non-commercial use, on condition that proper quotation
+#     is included in the pertinent publications.
+#
+# For the coupling with realtpl, the data has been adapted and modified.
+#
+# IMPORTANT:
+#     NO WARRANTY FOR THE CORRECTNESS OF THE VALUES!
+#
+Nitrogen: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [2.95257637E+00, 1.39690040E-03, -4.92631603E-07, 7.86010195E-11,
+              -4.60755204E-15, -9.23948688E+02, 5.87188762E+00 ]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [3.53100528E+00, -1.23660988E-04, -5.02999433E-07, 2.43530612E-09,
+              -1.40881235E-12, -1.04697628E+03, 2.96747038E+00]
+nDodecane: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [3.70187925E+01, 5.54721488E-02, -1.92079548E-05, 3.08175574E-09,
+              -1.84800617E-13, -5.26984458E+04, -1.61453501E+02]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [2.13264480E+01, -3.86394002E-02, 3.99476113E-04, -5.06681097E-07,
+              2.00697878E-10, -4.22475053E+04, -4.85848300E+01]
+nHexane: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [1.95158086E+01, 2.67753942E-02, -7.49783741E-06, 1.19510646E-09,
+              -7.51957473E-14, -2.94362466E+04, -7.74895497E+01]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [9.87121167E+00, -9.36699002E-03, 1.69887865E-04, -2.15019520E-07,
+              8.45407091E-11, -2.37185495E+04, -1.24999353E+01]
+Cyclohexane: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [1.32145970E+01, 3.58243434E-02, -1.32110852E-05, 2.17202521E-09,
+              -1.31730622E-13, -2.28092102E+04, -5.53518322E+01]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [4.04357527E+00, -6.19608335E-03, 1.76622274E-04, -2.22968474E-07,
+              8.63668578E-11, -1.69203544E+04, 8.52527441E+00]
+Cyclopentane: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [9.13283832E+00, 3.01131089E-02, -1.09169275E-05, 1.77298877E-09,
+              -1.06575265E-13, -1.50033856E+04, -2.92612779E+01]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [3.70339048E+00, -1.15575222E-02, 1.64113330E-04, -2.09369707E-07,
+              8.31059426E-11, -1.09388708E+04, 1.19772908E+01]
+Methane: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [1.91178600E+00, 9.60267960E-03, -3.38387841E-06, 5.38797240E-10,
+              -3.19306807E-14, -1.00992136E+04, 8.48241861E+00]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [5.14825732E+00, -1.37002410E-02, 4.93749414E-05, -4.91952339E-08,
+              1.70097299E-11, -1.02453222E+04, -4.63322726E+00]
+Methanol: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [3.52726795E+00, 1.03178783E-02, -3.62892944E-06, 5.77448016E-10,
+              -3.42182632E-14, -2.60028834E+04, 5.16758693E+00]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [5.65851051E+00, -1.62983419E-02, 6.91938156E-05, -7.58372926E-08,
+              2.80427550E-11, -2.56119736E+04, -8.97330508E-01]
+Ethanol: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [0.65624365E+01, 0.15204222E-01, -0.53896795E-05, 0.86225011E-09,
+              -0.51289787E-13, -0.31525621E+05, -0.94730202E+01]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [0.48586957E+01, -0.37401726E-02, 0.69555378E-04, -0.88654796E-07,
+              0.35168835E-10, -0.29996132E+05, 0.48018545E+01]
+Propane: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [6.66919760E+00, 2.06108751E-02, -7.36512349E-06, 1.18434262E-09,
+              -7.06914630E-14, -1.62754066E+04, -1.31943379E+01]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [4.21093013E+00, 1.70886504E-03, 7.06530164E-05, -9.20060565E-08,
+              3.64618453E-11, -1.43810883E+04, 5.61004451E+00 ]
+Butane: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 5000
+      coeff: [9.44547835E+00, 2.57856620E-02, -9.23613194E-06, 1.48631762E-09,
+              -8.87891206E-14, -2.01383773E+04, -2.63477585E+01]
+    - temp_start: 50
+      temp_end: 1000
+      coeff: [6.14474013E+00, 1.64500242E-04, 9.67848789E-05, -1.25486208E-07,
+              4.97846257E-11, -1.75989467E+04, -1.08058878E+00]
+nPentane: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 6000
+      coeff: [1.26972155E+01, 3.04568131E-02, -1.09153473E-05, 1.75523670E-09,
+              -1.04805044E-13, -2.51518655E+04, -4.30901457E+01]
+    - temp_start: 200
+      temp_end: 1000
+      coeff: [6.54437541E+00, -6.59895449E-03, 1.51083807E-04, -1.93191011E-07,
+              7.60508963E-11, -2.09654379E+04, 1.41151597E+00]
+CarbonDioxide: #source: Goos-Burcat-Ruscic
+    - temp_start: 1000
+      temp_end: 6000
+      coeff: [0.46365111E+01, 0.27414569E-02, -0.99589759E-06, 0.16038666E-09,
+              -0.91619857E-14, -0.49024904E+05, -0.19348955E+01]
+    - temp_start: 200
+      temp_end: 1000
+      coeff: [0.23568130E+01, 0.89841299E-02, -0.71220632E-05, 0.24573008E-08,
+              -0.14288548E-12, -0.48371971E+05, 0.99009035E+01]
+#FluidX: #source: Goos-Burcat-Ruscic
+#    - temp_start: 1000
+#      temp_end: 5000
+#      coeff: [1, 2, 3, 4, 5, 6, 7]
+#    - temp_start: 50
+#      temp_end: 1000
+#      coeff: [8, 9, 10, 11, 12, 13, 14]

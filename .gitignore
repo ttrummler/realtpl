@@ -1,0 +1,9 @@
+.idea/*
+**/__pycache__
+*egg-info
+.tox
+**/*.out
+realtpl/tests/*/results
+results
+build
+realtpl/tests/regression/current

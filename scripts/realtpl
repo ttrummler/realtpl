@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import argparse
+
+from realtpl import main
+
+description = ('Computes thermodynamic quantities using a thermodynamic model '
+               'based on cubic equations of state (SRK, PR, RKPR). '
+               'Additionally reference values are extracted from CoolProp.')
+_parser = argparse.ArgumentParser(description)
+_parser.add_argument(
+    '--config-file',
+    help='Path to configuration file.',
+    default='config.yaml'
+)
+
+if __name__ == "__main__":
+    main(vars(_parser.parse_args()))

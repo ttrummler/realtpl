@@ -1,0 +1,4 @@
+fluid_name: nHexane 
+pressure_Pa: 6.0e+06
+temperature_start_K: 300
+temperature_end_K: 600
