@@ -6,7 +6,7 @@ temperature_start_K: 300
 temperature_end_K: 1200
 temperature_step_K: 10
 n_nasa_coeff: 7
-output_dir: regression_tests/current
+output_dir: out
 save_data_to_csv: true
 show_plots: false
 save_plots: false
