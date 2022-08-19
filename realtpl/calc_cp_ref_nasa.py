@@ -38,8 +38,6 @@ def calc_cp_ref_nasa(data_nasa, temp: np.array):
      Spray A
      Int. J. Multiph. Flow, doi: 10.1016/j.ijmultiphaseflow.2017.11.001
     """
-    # evaluate cp according to temp array
-    cp = np.empty_like(temp)
 
     temp_2 = temp*temp
     temp_3 = temp_2*temp

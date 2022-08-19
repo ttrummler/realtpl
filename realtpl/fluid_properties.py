@@ -18,8 +18,6 @@ class FluidProperties:
     temp_c: float
     rho_c: float
     data_nasa: nasa.NasaCoefficients
-    # TODO discuss with MG (further planing: fp is now data for thermophysical
-    #  properties to configure OF simulations
     association_parameter: float = 0.0
     dipole_moment: float = 0.0
 
@@ -55,9 +53,9 @@ def fluid_properties_from_coolprop_and_data_base(name: str,
 
 
 def save_fp_to_file(fp: FluidProperties, output_dir: str):
-    path = (os.path.join(os.getcwd(), output_dir) + '/' + fp.name + '/')
+    path = os.path.join(os.getcwd(), output_dir, fp.name)
     os.makedirs(path, exist_ok=True)
     print('Starting evaluation for ' + fp.name + '\n' +
           'output is written to ' + path)
-    with open(path + '/' + fp.name + '.out', 'w') as f:
+    with open(os.path.join(path, fp.name + '.out'), 'w') as f:
         f.writelines(str(fp))

@@ -27,7 +27,7 @@ class NasaCoefficients:
             n_coeff = n_coeff.pop()
         else:
             raise RuntimeError(
-                f'Incosistent coefficient data provided for {self.name} '
+                f'Inconsistent coefficient data provided for {self.name} '
                 'please fix this.'
             )
 

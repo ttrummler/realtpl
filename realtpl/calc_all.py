@@ -28,9 +28,9 @@ def calc_eos_data(eos: str, fp: FluidProperties, temp_array: np.ndarray,
         eos-name
     fp:  FluidProperties
         dataclass with all fluid properties
-    temp: numpy array
+    temp_array: numpy array
         temperature range in Kelvin
-    pressure: float
+    pressure_array: numpy array
         pressure in Pascal where data is evaluated
 
     Returns:
@@ -71,10 +71,11 @@ def calc_eos_data(eos: str, fp: FluidProperties, temp_array: np.ndarray,
         vol = z * R_UNIV * temp_array/pressure
         rho = fp.mass/vol
 
-        cv_cp_sound = calc_cv_cp_sound(fp, temp_array, current_eos_data, alpha_funcs,
-                                       vol)
+        cv_cp_sound = calc_cv_cp_sound(fp, temp_array, current_eos_data,
+                                       alpha_funcs, vol)
 
-        visc_and_cond = calc_visc_cond_chung(fp, temp_array, rho, cv_cp_sound[0])
+        visc_and_cond = calc_visc_cond_chung(fp, temp_array, rho,
+                                             cv_cp_sound[0])
 
         df_temp_ = pd.DataFrame({
                 'kind': eos,
