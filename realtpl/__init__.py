@@ -1,3 +1,4 @@
+import argparse
 import pandas as pd
 import time
 import warnings
@@ -15,8 +16,20 @@ from realtpl.write_data_to_files import write_csv
 # do not provide anything for * imports
 __all__ = []
 
+_description = ('Computes thermodynamic quantities using a thermodynamic model'
+                ' based on cubic equations of state (SRK, PR, RKPR).'
+                ' Additionally reference values are extracted from CoolProp.')
+_parser = argparse.ArgumentParser(_description)
+_parser.add_argument(
+    '--config-file',
+    help='Path to configuration file.',
+    default='config.yaml'
+)
 
-def main(args: dict):
+
+def main():
+    args = vars(_parser.parse_args())
+
     time_start = time.process_time()
 
     # read and check config file
