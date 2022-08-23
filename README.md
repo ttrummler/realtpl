@@ -36,9 +36,7 @@ to run the executable and modify the configuration files only.
 `realtpl` has been specifically designed to be used for CFD
 simulations. Checking the accuracy of a thermodynamic model in advance is a
 central step before conducting CFD simulations. For different fluids as well as
-different pressure and temperature ranges, such an evaluation can be
-complicated and especially time-consuming. To this end, we have written
-`realtpl` to easily compare the results obtained with a thermodynamic model
+different pressure and temperature ranges, such an evaluation can be complicated and especially time-consuming. To this end, we have written `realtpl` to easily compare the results obtained with a thermodynamic model
 based on cubic EoS, for details see reference _Trummler et al._.
 
 # Installation
@@ -174,9 +172,7 @@ work. Cite as: _Trummler, T., Glatzle, M., Doehring, A., Urban, N., Klein, M.,
 Thermodynamic modeling for numerical simulations based on the generalized cubic
 equation of state._
 
-**NOTE** the license for the included database of the 7 coefficient NASA
-polynomials used for the calculation of the caloric properties. Using this data
-requires proper citation to be included in the pertinent publications. Cite:
+**NOTE** the license for the included database of the 7 coefficient NASA polynomials used for the calculation of the caloric properties. Using this data requires proper citation to be included in the pertinent publications. Cite:
 _Goos, E., Burcat, A., Ruscic, B.. New NASA Thermodynamic Polynomials Database With Active Thermochemical Tables updates. Report ANL 05/20 TAE 960._
 
 # Citation
