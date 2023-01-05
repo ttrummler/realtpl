@@ -30,6 +30,25 @@ def test_n_dodecane():
     _compare(actual_dfs, expected_dfs)
     return
 
+def test_hydrogen():
+    config_file = os.path.join(
+        os.path.dirname(__file__), "config_test_hydrogen.yaml"
+    )
+    actual_dfs = _run(config_file)
+    expected_dfs = _load_expected(config_file)
+
+    _compare(actual_dfs, expected_dfs)
+    return
+
+def test_air():
+    config_file = os.path.join(
+        os.path.dirname(__file__), "config_test_air.yaml"
+    )
+    actual_dfs = _run(config_file)
+    expected_dfs = _load_expected(config_file)
+
+    _compare(actual_dfs, expected_dfs)
+    return
 
 def _run(config_file):
     with open(config_file, 'r') as f:

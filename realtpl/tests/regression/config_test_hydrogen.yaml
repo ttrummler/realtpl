@@ -1,0 +1,15 @@
+fluid_name: Hydrogen
+eos_list: []
+include_ref_data: true
+pressure_Pa: 1.0e+05
+temperature_start_K: 200
+temperature_end_K: 1600
+temperature_step_K: 10
+n_nasa_coeff: 7
+output_dir: out
+save_data_to_csv: true
+show_plots: false
+save_plots: false
+show_deviation: false
+save_deviation: false
+performance_tracking: false

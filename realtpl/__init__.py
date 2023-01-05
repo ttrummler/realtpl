@@ -37,11 +37,13 @@ def main():
     # write config data to file
     config.write_config(cfg)
 
-    # nasa data for cp calculation
-    data_nasa = nasa.NasaCoefficients.from_name_and_coeff(
-        cfg['fluid_name'], cfg['n_nasa_coeff'])
-
-    _check_temp_range(data_nasa, cfg)
+    if len(cfg['eos_list']) != 0:
+        # nasa data for cp calculation
+        data_nasa = nasa.NasaCoefficients.from_name_and_coeff(
+            cfg['fluid_name'], cfg['n_nasa_coeff'])
+        _check_temp_range(data_nasa, cfg)
+    else:
+        data_nasa = None
 
     # get fluid properties
     fp = fluid_properties_from_coolprop_and_data_base(cfg['fluid_name'],
